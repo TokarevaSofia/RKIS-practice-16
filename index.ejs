@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="card main">
+    <% if (user) { %>
+      <h1>Привет, <%= user.username %>!</h1>
+      <p>Ваша роль: <strong><%= user.role %></strong></p>
+      
+      <div class="btn-group">
+        <% if (user.role === 'admin') { %>
+          <a href="/admin" class="btn btn-role" style="margin-bottom: 10px;">Админ-панель</a>
+        <% } %>
+        
+        <a href="/dashboard" class="btn" style="margin-bottom: 10px;">Личный кабинет</a>
+        
+        <form action="/logout" method="POST">
+          <button type="submit" class="btn btn-danger">Выйти из аккаунта</button>
+        </form>
+      </div>
+    <% } else { %>
+      <h1>Добро пожаловать!</h1>
+      <p>Вы зашли как гость. Для использования всех возможностей войдите в систему или пройдите регистрацию.</p>
+      <div class="btn-group">
+        <a href="/login" class="btn">Войти</a>
+        <a href="/register" class="btn btn-outline">Регистрация</a>
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>

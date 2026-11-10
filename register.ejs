@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="card register-theme">
+    <h2>Создать аккаунт</h2>
+    
+    <% if (error) { %>
+      <div class="error"><%= error %></div>
+    <% } %>
+    
+    <form action="/register" method="POST">
+      <div class="form-group">
+        <label for="username">Имя пользователя</label>
+        <input type="text" id="username" name="username" required placeholder="Введите логин" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required placeholder="Введите пароль" autocomplete="new-password"> 
+      </div>
+      <button type="submit" class="btn btn-register">Зарегистрироваться</button>
+    </form>
+    
+    <p class="footer-text">
+      Уже зарегистрированы? <a href="/login">Войти</a>
+    </p>
+  </div>
+</body>
+</html>

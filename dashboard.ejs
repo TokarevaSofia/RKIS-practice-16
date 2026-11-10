@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="card wide">
+    <h1>Личный кабинет</h1>
+    
+    <div class="secret">
+      Это секретный личный кабинет пользователя <strong><%= user.username %></strong>.
+    </div>
+    
+    <div class="btn-group" style="flex-direction: row;">
+      <a href="/" class="btn btn-outline">На главную</a>
+      <form action="/logout" method="POST" style="flex:1; display: flex;">
+        <button type="submit" class="btn btn-danger" style="width: 100%;">Выйти</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

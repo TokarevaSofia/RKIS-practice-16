@@ -1,0 +1,209 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #b6c0cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.card {
+  background: #c6d3f3;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  width: 360px;
+}
+.card.wide { width: 420px; text-align: center; }
+.card.main { width: 380px; text-align: center; }
+h1, h2 {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+h1 { font-size: 24px; }
+p {
+  color: #3f3e3e;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+}
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #0084d0; 
+}
+.card.register-theme input:focus {
+  border-color: #053a4e; 
+}
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #0084d0;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #122d79;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #122d79;
+  border: 2px solid #0084d0;  
+}
+.btn-outline:hover {
+  background-color: #122d79;
+  color: white;
+}
+.btn-role {
+  background-color: #cc8101;
+}
+.btn-role:hover {
+  background-color: #ad6e03;
+}
+.btn-danger {
+  background-color: #ff0000;
+}
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+.btn-register {
+  background-color: #cd1a1a;
+}
+.btn-register:hover {
+  background-color: #a91515;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #fca5a5;
+}
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+.footer-text a {
+  color: #c80000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.card.register-theme .footer-text a {
+  color: #0063ae;
+}
+.footer-text a:hover {
+  text-decoration: underline;
+}
+.secret {
+  background: #ecfdf5;
+  color: #06465f;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #0090a0;
+  margin-bottom: 25px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.5;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  table-layout: fixed;
+}
+.admin-table th, .admin-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e5e7eb;
+  word-break: break-word;
+  vertical-align: middle;
+}
+.admin-table th {
+  background-color: #f9fafb;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 14px;
+}
+.admin-table td {
+  color: #1f2937;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.role-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.role-admin {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+.role-user {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+.btn-delete {
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-delete:hover:not(.disabled) {
+  background-color: #ef4444;
+  color: white;
+}
+.btn-delete.disabled {
+  color: #9ca3af;
+  border-color: #d1d5db;
+  cursor: not-allowed;
+  background-color: #f3f4f6;
+}

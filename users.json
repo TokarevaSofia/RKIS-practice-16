@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1794251722686,
+    "username": "boss",
+    "password": "$2b$10$mkUUof3R3qLjdoeQu0V0ueHSzGRS7vRbfHi9pxB7EwA//35jrk7lW",
+    "role": "admin"
+  },
+  {
+    "id": 1794252530815,
+    "username": "Соня",
+    "password": "$2b$10$Lum7x5BlFkJc/CcoMgibEOTbai4zRQsuSKparbaZWEOd0gK.EKeju",
+    "role": "user"
+  }
+]
